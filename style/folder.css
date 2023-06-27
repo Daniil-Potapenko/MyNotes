@@ -1,0 +1,74 @@
+.folder{
+    cursor: default;
+    background: #fdfdfd;
+    overflow: auto;
+    border: 1px solid rgba(0, 0, 0, 0.59);
+    z-index: 70;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 312px;
+    position : absolute;
+    border-radius: 14px;
+    width: 300px;
+}
+.folder .cards{
+    width: 45% !important;
+    height: 40% !important;
+    min-width: unset !important;
+    min-height: unset !important;
+    left: unset !important;
+    top: unset !important;
+    position: unset !important;
+    box-shadow: 6px 10px 5px 0px rgba(0, 0, 0, 0.11);
+    margin: 2%;
+}
+
+.folder .ui-resizable-handle{
+    display: none !important;
+}
+
+.folder .cardSetings{
+    display: none;
+}
+
+.folder .cardsSummary{
+    line-height: normal;
+    padding: 0 4px 0 4px;
+    font-size: 10px;
+}
+.folder .cardsTitle{
+    font-size: 12px;
+    padding: 0;
+}
+
+
+.folderHeader{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.04);
+    z-index: 100;
+    height: 32px;
+
+}
+
+.folderTitle{
+    font-size: 17px;
+    width: 85%;
+    text-align: center;
+
+}
+
+.folderHeader img{
+    opacity: 0;
+    padding: 0 5px 0 5px;
+    -webkit-transition: opacity 1s ease-in-out .0s;
+    transition: opacity  1s ease-in-out 1.5s;
+}
+.folderHeader:hover  img{
+    opacity: 1;
+    -webkit-transition: opacity .15s ease-in-out .0s;
+    transition: opacity .15s ease-in-out .0s;
+
+}

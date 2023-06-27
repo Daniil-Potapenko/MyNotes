@@ -1,0 +1,155 @@
+.sidenav {
+    height: calc(100vh - 40px);
+    width: 260px;
+    margin: 20px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 44, 44, 0.3);
+    /*background-color: rgba(47, 47, 47, 0.21);*/
+    border-radius: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.68);
+    overflow-x: hidden;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    box-shadow: 0px 0px 47px 11px rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: fadeInLeft;
+    animation-duration: 0.5s;
+    transition: all 0.5s;
+}
+.sidenav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.sidenav *::selection{
+    background: none;
+    color: unset;
+}
+.sideNavContainerTop{
+    padding: 30px 48px 20px 48px;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: space-around;
+}
+.sideNavContainerTop img{
+    height: 30px;
+    width: 30px;
+}
+
+
+.sideNavScreenListContainer{
+    position: relative;
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 15px 8px 5px 10px;
+    --animate-duration: 200ms;
+    --animate-delay: 0s;
+}
+
+.sideNavSettings{
+    position: relative;
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 15px 8px 5px 10px;
+    --animate-duration: 200ms;
+    --animate-delay: 0s;
+}
+
+
+
+.sideNavCardLink{
+    padding-bottom: 5px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #cbcfdb;
+    overflow: hidden;
+    transition: color,height 0.4s;
+    animation: fadeInDown;
+    animation-duration: 0.4s;
+}
+.sideNavitem :last-child{
+    padding-bottom:10px;
+}
+
+
+.sideNavCardLink::before{
+    content: "·  ";
+}
+
+.sideNavCardLink:hover{
+    color: #ffffff;
+    transition: color,height 0.4s;
+}
+.sideNavitem {
+    padding: 6px;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #9b9b9b;
+    display: flex;
+    transition: all 0.5s;
+    --animate-duration: 600ms;
+
+}
+
+.screenName{
+    letter-spacing: -0.04em;
+    font-size: 18px;
+    width: 180px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+
+.deleteScreenButon{
+    font-size: 15px;
+    align-self: center;
+    margin-left: auto;
+    opacity: 0;
+    transition: opacity .5s ease-in-out .5s;
+}
+.sideNavitem:hover .deleteScreenButon{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out .0s;
+
+}
+.sideNavitem:hover {
+    opacity: 1;
+    color: #cdcdcd;
+}
+
+.sideNavContainerEnd{
+    padding: 10px 18px 10px 8px;
+    border-top: 2px dotted rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: center;
+
+}
+#sideNavitemCreateNotes{
+    height: 46px;
+    width: 46px;
+}
+
+#screenList .sideNavitem {
+    height: 20px;
+    transition: all 0.5s;
+}
+.openedScreen{
+    color: white;
+}
+
+.openedScreen .screenName{
+    transition: all 0.5s;
+    letter-spacing: 1px;
+    opacity: 1;
+    padding-bottom: 10px;
+}
+
+

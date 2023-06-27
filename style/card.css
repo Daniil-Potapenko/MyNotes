@@ -1,0 +1,120 @@
+.cards  {
+    user-select: none;
+    font-size: 0.8rem;
+    background: rgba(253, 253, 253, 0.95);
+    color: #000000;
+    resize: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid rgba(35, 35, 35, 0);
+    z-index: 30;
+    position : absolute;
+    min-height : 105px;
+    min-width : 200px;
+    border-radius: 14px;
+    box-shadow: rgb(25 25 26 / 3%) 0px 0px 0px 1px, rgb(38 44 61 / 14%) 0px 10px 40px 0px, rgb(38 44 61 / 10%) 0px 4px 12px -4px;
+    transition: opacity 0.5s;
+    backdrop-filter: blur(5px);
+    --animate-duration: 700ms;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsTitle{
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 0 0 0;
+    font-size: 17px;
+}
+
+.cardsSummary{
+    padding: 0 10px 0px 15px;
+    flex: 1 0 auto;
+    height: 0px;
+    text-overflow: clip;
+    overflow: auto;
+    white-space: break-spaces;
+
+}
+.cardsSummary a {
+    color: #356aff;
+    text-decoration: underline;
+}
+.cardsSummary img{
+    max-width: 100%;
+    border-radius: 14px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.cardsSummary h1,.cardsSummary h2,.cardsSummary h3,.cardsSummary h4,.cardsSummary h5,.cardsSummary h6{
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cardsSummary blockquote ol, .cardsSummary blockquote p, .cardsSummary blockquote ul {
+    color: #363636 !important;
+    font-style: italic;
+}
+.cardsSummary del {
+    color: #363636 !important;
+}
+.cardsSummary pre {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    background-color: rgba(244, 247, 248, 0.3) !important;
+    border-radius: 15px !important;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.cardSetings {
+    display: flex;
+}
+
+.cardSetings *{
+    opacity:0;
+    -webkit-transition: opacity 1s ease-in-out .0s;
+    transition: opacity  1s ease-in-out 1.5s;
+}
+.cards:hover  .cardSetings *{
+    opacity:1;
+    -webkit-transition: opacity .15s ease-in-out .0s;
+    transition: opacity .15s ease-in-out .0s;
+}
+
+.paletteBtn{
+    margin-left: auto;
+}
+.cardSetings img{
+    padding: 0 10px 3px 0;
+}
+
+.cardsCreateTime {
+    align-self: center;
+    padding: 0 0 0 15px;
+}
+.cardContent {
+    flex: 1 1 auto;
+}
+
+.cardsSummary table, th,td{
+    border: 1px solid rgba(103, 103, 103, 0.87);
+
+}
+.cardsSummary  th{
+    background: rgba(43, 43, 43, 0.15);
+}
+.cardsSummary table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cardsSummary ol,ul{
+    padding-inline: 15px;
+}

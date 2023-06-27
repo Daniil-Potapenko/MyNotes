@@ -1,0 +1,68 @@
+.toastui-editor-mode-switch{
+    display: none !important;
+}
+.toastui-editor-contents table{
+    width: 100% !important;
+}
+
+.toastui-editor-defaultUI-toolbar {
+    background-color: #0000001c !important;
+    border-bottom: unset !important;
+    justify-content: center !important;
+}
+
+.toastui-editor-defaultUI-toolbar button {
+    border: 1px solid #f7f9fc00 !important;
+}
+
+.toastui-editor-toolbar-icons.codeblock {
+    background-position-x: -389px !important;
+}
+.toastui-editor-contents {
+    font-size: 15px !important;
+
+}
+.toastui-editor-contents img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 14px;
+
+}
+.toastui-editor-contents blockquote ol, .toastui-editor-contents blockquote p, .toastui-editor-contents blockquote ul {
+    color: #363636 !important;
+    font-style: italic;
+}
+.toastui-editor-contents del {
+     color: #363636 !important;
+}
+.toastui-editor-contents pre {
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    background-color: rgba(244, 247, 248, 0.3) !important;
+    border-radius: 15px !important;
+}
+
+.toastui-editor-contents h1, .toastui-editor-contents h2, .toastui-editor-contents h3, .toastui-editor-contents h4, .toastui-editor-contents h5, .toastui-editor-contents h6 {
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+}
+.toastui-editor-contents {
+cursor: text;
+}
+.toastui-editor-contents ol>li:before {
+    color: #313131 !important;
+}
+.toastui-editor-contents a {
+    color: #356aff !important;
+
+}
+
+.toastui-editor-contents .task-list-item:before {
+    top: 5px!important;
+}
+
+.toastui-editor-contents img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

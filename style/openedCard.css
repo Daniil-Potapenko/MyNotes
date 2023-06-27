@@ -1,0 +1,86 @@
+.opacity .cards{
+    opacity: 0.4 !important;
+    pointer-events: none;
+    /*transition: all 0.5s;*/
+}
+
+@media screen and (max-width: 1480px) {
+   .containerOpenedCards{
+       z-index: 1100 !important;
+   }
+}
+
+.containerOpenedCards{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 990;
+    background: #00000029;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+.openedCards{
+    display: flex;
+    letter-spacing: .00625em;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    position: absolute;
+    height: 90%;
+    width: 900px;
+    background: rgba(253, 253, 253, 0.95);
+    border-radius: 14px;
+    /*border: 1px solid rgb(100, 85, 85);*/
+    backdrop-filter: blur(9px);
+    box-shadow: 0px 0px 47px 11px rgb(18, 24, 33);
+    flex-direction: column;
+
+}
+
+.openedCardsHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.openedCardTitle{
+   align-self: center;
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    align-items: center;
+    margin: 5px 0 5px 0;
+    outline:0;
+
+}
+
+.OpenedCardButtons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 10%;
+}
+
+.saveOpenedCards{
+    padding: 0 5px 0 0;
+}
+
+
+
+.openedCardFullScreen .openedCardsSummary{
+    width: 60%;
+    background: #00000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+.openedCardFullScreen{
+    width: 100%;
+    height: 100%;
+}
